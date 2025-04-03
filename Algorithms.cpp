@@ -45,7 +45,7 @@ namespace algorithms {
     }
 
     // Helper function for DFS
-    void dfsHelper(const Graph& graph, Graph& tree, bool visited[], int current) {
+    void dfsVisit(const Graph& graph, Graph& tree, bool visited[], int current) {
         visited[current] = true;
 
         const NeighborList& neighbors = graph.getNeighbors(current);
@@ -54,7 +54,7 @@ namespace algorithms {
 
             if (!visited[neighborId]) {
                 tree.addDirectedEdge(current, neighborId);
-                dfsHelper(graph, tree, visited, neighborId);
+                dfsVisit(graph, tree, visited, neighborId);
             }
         }
     }
@@ -65,10 +65,13 @@ namespace algorithms {
         Graph tree(n);
         bool visited[MAX_SIZE] = { false };
 
-        // For a forest, we must loop through ALL vertices
+        // Start DFS from the given start vertex
+        dfsVisit(graph, tree, visited, start);
+
+        // Continue DFS for any disconnected components
         for (int i = 0; i < n; ++i) {
             if (!visited[i]) {
-                dfsHelper(graph, tree, visited, i);
+                dfsVisit(graph, tree, visited, i);
             }
         }
 
