@@ -10,7 +10,7 @@ UnionFind::UnionFind(int size) {
     }
 }
 
-// Destructor:
+// Destructor
 UnionFind::~UnionFind() {
     // No dynamic memory to release
 }
