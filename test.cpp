@@ -175,7 +175,7 @@ TEST_CASE("Prim algorithm") {
     Graph primTree = Algorithms::prim(g);
     CHECK(primTree.getNumVertices() == 4);
     CHECK(primTree.hasEdge(1, 2)); // edge with weight 1
-    CHECK(primTree.hasEdge(0, 1)); // or 0-2 depending on MST variation
+    CHECK(primTree.hasEdge(0, 1));
 }
 
 TEST_CASE("Kruskal algorithm") {
