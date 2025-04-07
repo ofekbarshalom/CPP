@@ -217,7 +217,7 @@ namespace algorithms {
         return count;
     }
 
-    // Sort edges by weight using bubble sort (since STL is not allowed)
+    // Sort edges by weight using bubble sort
     void sortEdges(Edge edges[], int edgeCount) {
         for (int i = 0; i < edgeCount - 1; ++i) {
             for (int j = 0; j < edgeCount - i - 1; ++j) {
