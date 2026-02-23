@@ -4,12 +4,16 @@ This repository contains my university C++ exercises and projects.
 
 ## Structure
 
-- `Ex1/` - First exercise in system programming course.
-- `Ex2/` - Second exercise in system programming course.
-- `Ex3/` - Third exercise in system programming course.
-- `OS_Ex1/` - First exercise in operating systems course.
-- `OS_Ex2/` - Second exercise in operating systems course.
-- `LICENSE` - Project licensed under the MIT License.
+- `coup-game/` - Coup game implementation (logic + GUI).
+- `custom-container-iterators/` - Custom container and iterator patterns.
+- `graph-adjacency-list/` - Graph data structure and algorithms project.
+- `square-matrix-operators/` - Square matrix operators and tests.
+- `operating-systems/` - Operating systems course exercises and final project:
+	- `os-ex1-processes-signals/`
+	- `os-ex2-threads-sync/`
+	- `os-ex3-scheduling-ipc/`
+	- `os-final-project/`
+- `LICENSE` - Repository licensed under the MIT License.
 
 ## License
 
